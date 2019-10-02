@@ -1,0 +1,133 @@
+﻿; Common buttons
+action.new = New
+action.view = View
+action.edit = Edit
+action.del = Del
+action.delete = Delete
+action.restore = Restore 
+action.cancel = Cancel
+action.back = Back
+action.print = Print
+action.send = Send
+action.save = Save
+action.add_similar = Add Similar
+action.execute_query = Execute Query
+action.refresh = Refresh
+action.export = Export
+action.export.xslx = Microsoft Excel (XLSX)
+action.export.csv = Comma-separated values (CSV)
+action.export.html = Hypertext Markup Language (HTML)
+
+dbui.search.placeholder = Search for keywords...
+dbui.search.button = Search
+dbui.create_new = Create New
+; {0} - table's singular name
+dbui.new_record = New {0}
+dbui.sidebar.showhide = Show/Hide Sidebar
+dbui.sidebar.pin = Pin/Unpin Sidebar
+dbui.sidebar.dashboards = Dashboards
+dbui.sidebar.recent_views = Recent Views
+dbui.sidebar.views = Views
+dbui.sidebar.other_views = Other Views
+dbui.helpbox = Help
+dbui.workspaces.title = Workspace List
+dbui.workspaces.all_tables = All tables
+
+view.customize = Customize
+view.customize.update = Update
+view.customize.reset = Reset
+view.param.title = Select Criteria
+view.param.search = Search
+view.column.action = Action
+view.no_records = There are no records to show
+; {0} - number of records displayed
+; {1} - total count of records
+view.num_records = Displaying {0} records.
+view.num_records.1 = Displaying 1 record.
+view.first_records = Displaying first {0} records.
+view.first_records_of = Displaying first {0} of {1} records.
+view.group.num_records = {0} records
+view.group.num_records.1 = 1 record
+view.show_all_link = Click here to show all
+view.total = Total
+view.calendar.this_month = This Month
+view.calendar.this_week = This Week
+view.calendar.prev = Previous
+view.calendar.next = Next
+
+
+; {0} - table's singular name
+form.title.new = New {0}
+form.title.edit = Edit {0}
+; {0} - count of errors
+form.invaliddata.1 = Error: Invalid Data. {0} error(s) found.
+form.invaliddata.2 = Please review error messages below to correct your data.
+form.choice.none = --None--
+form.choice.addnew = --Add New Choice--
+form.choice.any = --Any--
+form.choice.custom = --Custom--
+form.choice.blank = --Blank--
+form.choice.browse = --Browse Choices--
+form.choice.unknown = Unknown
+form.choice.select = Select
+form.choice.select_all = Select All
+form.choice.select_none = Select None
+
+; ---------------------
+;
+; Page specific strings
+;
+; ---------------------
+;
+; -- recordpicker.aspx --
+;
+; {0} - table's singular name
+recordpicker.title.no_search = Select a {0}
+; {0} - table's plural name
+recordpicker.title.search = Select from the list below, or search to see a subset of {0}.
+
+;
+; -- recyclebin.aspx --
+;
+recyclebin.title = Recycle Bin
+recyclebin.column.name = Name
+recyclebin.column.deleted_by = Deleted By
+recyclebin.column.deleted_on = Deleted On
+recyclebin.no_records = No deleted records
+; {0} - comma separated list of tables' plural names
+recyclebin.no_records.description = There are no deleted {0}
+;
+; -- sendview.aspx --
+;
+; {0} - view name
+sendview.title = {0}: Send
+sendview.description = Use the form below to send this view.
+sendview.from = From
+sendview.to = To
+sendview.subject = Subject
+sendview.body = Body
+;
+; -- searchresults.aspx --
+;
+searchresults.title = Search Results
+; {0} - search terms
+searchresults.description.search_terms = You were searching for "{0}".
+searchresults.description.no_search = There is nothing to search for
+searchresults.attachments = File Attachments
+searchresults.column.record = Record
+searchresults.column.table = Table
+searchresults.column.column = Column
+searchresults.column.file_name = File Name
+;
+; -- attachments.aspx --
+;
+; {0} - column name
+attachments.title = {0}: Revision History
+attachments.action.make_current = Make Current
+attachments.column.revision = Revision
+attachments.column.file_name = File Name
+attachments.column.size = Size
+attachments.column.created_by = Created By
+attachments.column.created_on = Created On
+attachments.error.one_record = One selected record is required
+attachments.error.no_access = You do not have access to this attachment
