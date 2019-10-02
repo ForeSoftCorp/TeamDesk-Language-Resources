@@ -17,6 +17,7 @@ action.export = Export
 action.export.xslx = Microsoft Excel (XLSX)
 action.export.csv = Comma-separated values (CSV)
 action.export.html = Hypertext Markup Language (HTML)
+action.confirmation_text = Are you sure?
 
 dbui.search.placeholder = Search for keywords...
 dbui.search.button = Search
@@ -62,6 +63,21 @@ form.title.edit = Edit {0}
 ; {0} - count of errors
 form.invaliddata.1 = Error: Invalid Data. {0} error(s) found.
 form.invaliddata.2 = Please review error messages below to correct your data.
+
+form.error_value_missing = You must enter a value
+form.error_type_mismatch_text = Not a valid URL
+form.error_type_mismatch_number = Not a valid number
+form.error_type_mismatch_date = Not a valid date
+form.error_type_mismatch_time = Not a valid time
+form.error_type_mismatch_timestamp = Not a valid timestamp
+form.error_type_mismatch_phone = Not a valid phone
+form.error_type_mismatch_email = Not a valid email address
+form.error_type_mismatch_url = Not a valid URL
+form.error_type_mismatch_user = Not a valid user
+form.error_type_mismatch_barcode = Not a valid barcode
+form.error_type_mismatch_location = Not a valid location
+form.error_bad_input = Invalid input
+
 form.choice.none = --None--
 form.choice.addnew = --Add New Choice--
 form.choice.any = --Any--
@@ -72,6 +88,29 @@ form.choice.unknown = Unknown
 form.choice.select = Select
 form.choice.select_all = Select All
 form.choice.select_none = Select None
+form.choice.yes = Yes
+form.choice.no = No
+form.choice.add = Add
+form.choice.remove = Remove
+;
+; -- Signature component --
+;
+signature.title = Please sign off below and save
+signature.action.sign_off = Sign Off
+signature.action.withdraw = Withdraw Signature
+signature.action.withdraw.confirmation = Are you sure you want to withdraw the signature?
+signature.action.done = Done
+signature.action.reset = Reset
+;
+; -- Location component --
+;
+location.current = Get current location
+location.select = Select on the map
+location.search = Search for location or drag a pin
+location.error.disabled = Location services are disabled
+location.error.failed = Failed while getting location
+location.error.timeout = Timeout while getting location
+location.error.not_supported = Location services are disabled or not supported
 
 ; ---------------------
 ;
@@ -113,6 +152,10 @@ searchresults.title = Search Results
 ; {0} - search terms
 searchresults.description.search_terms = You were searching for "{0}".
 searchresults.description.no_search = There is nothing to search for
+searchresults.no_records.title = No records found
+; {0} - comma separated list of tables' plural names
+searchresults.no_records.description = There are no matching {0}
+searchresults.action.continue = Continue Searching?
 searchresults.attachments = File Attachments
 searchresults.column.record = Record
 searchresults.column.table = Table
