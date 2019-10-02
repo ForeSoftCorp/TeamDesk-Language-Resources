@@ -1,6 +1,4 @@
-# TeamDesk-Language-Resources
-
-Language resources for TeamDesk
+# Language resources for TeamDesk
 
 * [English](./dbstrings.txt) by ForeSoft
 * [French](./fr/dbstrings.txt) courtesy of Calvin Peters
