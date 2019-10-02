@@ -1,0 +1,133 @@
+; Common buttons
+action.new = Nouveau
+action.view = Voir
+action.edit = Modifier
+action.del = Del
+action.delete = Supprimer
+action.restore = Restaurer
+action.cancel = Annuler
+action.back = Retour
+action.print = Imprimer
+action.send = Envoyer
+action.save = Enregistrer
+action.add_similar = Ajouter un élément similaire
+action.execute_query = Exécuter la requête
+action.refresh = Actualiser
+action.export = Exporter
+action.export.xslx = Microsoft Excel (XLSX)
+action.export.csv = valeurs séparées par des virgules (CSV)
+action.export.html = Langage de balisage hypertexte (HTML)
+
+dbui.search.placeholder = Rechercher les mots-clés ...
+dbui.search.button = Rechercher
+dbui.create_new = Créer un nouveau
+; {0} - table's singular name
+dbui.new_record = Nouveau {0}
+dbui.sidebar.showhide = Afficher / masquer la barre latérale
+dbui.sidebar.pin = Épingler / Dégager la barre latérale
+dbui.sidebar.dashboards = Tableaux de bord
+dbui.sidebar.recent_views = Vues récentes
+dbui.sidebar.views = Vues
+dbui.sidebar.other_views = Autres vues
+dbui.helpbox = Aide
+dbui.workspaces.title = Liste des espaces de travail
+dbui.workspaces.all_tables = Toutes les tables
+
+view.customize = Personnaliser
+view.customize.update = Mise à jour
+view.customize.reset = Réinitialiser
+view.param.title = Sélectionner les critères
+view.param.search = Recherche
+view.column.action = Action
+view.no_records = Il n'y a aucun enregistrement à afficher
+; {0} - number of records displayed
+; {1} - total count of records
+view.num_records = Affichage des {0} enregistrements.
+view.num_records.1 = Affichage de 1 enregistrement.
+view.first_records = Afficher les {0} premiers enregistrements.
+view.first_records_of = Affichage du premier {0} des {1} enregistrements.
+view.group.num_records = {0} enregistrements
+view.group.num_records.1 = 1 enregistrement
+view.show_all_link = Cliquez ici pour tout afficher
+view.total = Total
+view.calendar.this_month = Ce mois-ci
+view.calendar.this_week = Cette semaine
+view.calendar.prev = Précédent
+view.calendar.next = Prochain
+
+
+; {0} - table's singular name
+form.title.new = Nouveau {0}
+form.title.edit = Editer {0}
+; {0} - count of errors
+form.invaliddata.1 = Erreur: données non valides. {0} erreur (s) trouvée (s).
+form.invaliddata.2 = Veuillez examiner les messages d'erreur ci-dessous pour corriger vos données.
+form.choice.none = --Aucun--
+form.choice.addnew = --Ajouter un nouveau choix--
+form.choice.any = --Tout--
+form.choice.custom = --Personnalisé--
+form.choice.blank = --Blank--
+form.choice.browse = --Parcourir les choix--
+form.choice.unknown = Inconnu
+form.choice.select = Sélectionner
+form.choice.select_all = Tout sélectionner
+form.choice.select_none = Ne rien sélectionner
+
+; ---------------------
+;
+; Page specific strings
+;
+; ---------------------
+;
+; -- recordpicker.aspx --
+;
+; {0} - table's singular name
+recordpicker.title.no_search = Sélectionnez un {0}
+; {0} - table's plural name
+recordpicker.title.search = Choisissez dans la liste ci-dessous ou cherchez un sous-ensemble de {0}.
+
+;
+; -- recyclebin.aspx --
+;
+recyclebin.title = Corbeille
+recyclebin.column.name = Nom
+recyclebin.column.deleted_by = Supprimé par
+recyclebin.column.deleted_on = Supprimé le
+recyclebin.no_records = Aucun enregistrement supprimé
+; {0} - comma separated list of tables' plural names
+recyclebin.no_records.description = Il n'y a pas de suppression {0}
+;
+; -- sendview.aspx --
+;
+; {0} - view name
+sendview.title = {0}: envoyer
+sendview.description = Utilisez le formulaire ci-dessous pour envoyer cette vue.
+sendview.from = De
+sendview.to = À
+sendview.subject = Sujet
+sendview.body = Corps
+;
+; -- searchresults.aspx --
+;
+searchresults.title = Résultats de la recherche
+; {0} - search terms
+searchresults.description.search_terms = Vous recherchiez "{0}".
+searchresults.description.no_search = Il n'y a rien à rechercher
+searchresults.attachments = Pièces jointes
+searchresults.column.record = Record
+searchresults.column.table = Tableau
+searchresults.column.column = Colonne
+searchresults.column.file_name = Nom du fichier
+;
+; -- attachments.aspx --
+;
+; {0} - column name
+attachments.title = {0}: Historique des révisions
+attachments.action.make_current = Rendre le courant
+attachments.column.revision = Révision
+attachments.column.file_name = Nom du fichier
+attachments.column.size = Taille
+attachments.column.created_by = Créé par
+attachments.column.created_on = Créé le
+attachments.error.one_record = Un enregistrement sélectionné est requis
+attachments.error.no_access = Vous n'avez pas accès à cette pièce jointe
