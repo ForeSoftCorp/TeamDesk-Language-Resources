@@ -1,4 +1,4 @@
-; Common buttons
+﻿; Common buttons
 action.new = Nouveau
 action.view = Voir
 action.edit = Modifier
@@ -17,6 +17,7 @@ action.export = Exporter
 action.export.xslx = Microsoft Excel (XLSX)
 action.export.csv = valeurs séparées par des virgules (CSV)
 action.export.html = Langage de balisage hypertexte (HTML)
+action.confirmation_text = Êtes-vous sûr?
 
 dbui.search.placeholder = Rechercher les mots-clés ...
 dbui.search.button = Rechercher
@@ -62,6 +63,21 @@ form.title.edit = Editer {0}
 ; {0} - count of errors
 form.invaliddata.1 = Erreur: données non valides. {0} erreur (s) trouvée (s).
 form.invaliddata.2 = Veuillez examiner les messages d'erreur ci-dessous pour corriger vos données.
+
+form.error_value_missing = Vous devez entrer une valeur
+form.error_type_mismatch_text = URL non valide
+form.error_type_mismatch_number = Nombre non valide
+form.error_type_mismatch_date = Date non valide
+form.error_type_mismatch_time = Heure non valide
+form.error_type_mismatch_timestamp = Horodatage non valide
+form.error_type_mismatch_phone = Téléphone non valide
+form.error_type_mismatch_email = Adresse courriel invalide
+form.error_type_mismatch_url = URL non valide
+form.error_type_mismatch_user = Pas un utilisateur valide
+form.error_type_mismatch_barcode = Code à barres non valide
+form.error_type_mismatch_location = Emplacement non valide
+form.error_bad_input = Entrée non valide
+
 form.choice.none = --Aucun--
 form.choice.addnew = --Ajouter un nouveau choix--
 form.choice.any = --Tout--
@@ -72,6 +88,29 @@ form.choice.unknown = Inconnu
 form.choice.select = Sélectionner
 form.choice.select_all = Tout sélectionner
 form.choice.select_none = Ne rien sélectionner
+form.choice.yes = Oui
+form.choice.no = No
+form.choice.add = Ajouter
+form.choice.remove = Supprimer
+;
+; -- Signature component --
+;
+signature.title = Veuillez signer ci-dessous et sauvegarder
+signature.action.sign_off = Fermer la session
+signature.action.withdraw = Retirer la signature
+signature.action.withdraw.confirmation = Etes-vous sûr de vouloir retirer la signature?
+signature.action.done = Fini
+signature.action.reset = Réinitialiser
+;
+; -- Location component --
+;
+location.current = Obtenir l'emplacement actuel
+location.select = Sélectionner sur la carte
+location.search = Recherchez un emplacement ou faites glisser une épingle
+location.error.disabled = Les services de localisation sont désactivés
+location.error.failed = Echec lors de l'obtention de l'emplacement
+location.error.timeout = Délai d'attente tout en obtenant l'emplacement
+location.error.not_supported = Les services de localisation sont désactivés ou non pris en charge
 
 ; ---------------------
 ;
@@ -113,6 +152,10 @@ searchresults.title = Résultats de la recherche
 ; {0} - search terms
 searchresults.description.search_terms = Vous recherchiez "{0}".
 searchresults.description.no_search = Il n'y a rien à rechercher
+searchresults.no_records.title = Aucun enregistrement trouvé
+; {0} - liste des noms pluriels de tables séparés par des virgules
+searchresults.no_records.description = Il n'y a pas de correspondance {0}
+searchresults.action.continue = Continuer à chercher??
 searchresults.attachments = Pièces jointes
 searchresults.column.record = Record
 searchresults.column.table = Tableau
@@ -123,7 +166,7 @@ searchresults.column.file_name = Nom du fichier
 ;
 ; {0} - column name
 attachments.title = {0}: Historique des révisions
-attachments.action.make_current = Rendre le courant
+attachments.action.make_current = Rendre ce courant
 attachments.column.revision = Révision
 attachments.column.file_name = Nom du fichier
 attachments.column.size = Taille
