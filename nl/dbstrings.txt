@@ -1,1 +1,176 @@
+; Common buttons
+action.new = Nieuw
+action.view = Openen
+action.edit = Wijzigen
+action.del = Verwijderen
+action.delete = Verwijderen
+action.restore = Herstellen
+action.cancel = Annuleren
+action.back = Terug
+action.print = Afdrukken
+action.send = Zenden
+action.save = Opslaan
+action.add_similar = Kopiëren
+action.execute_query = Uitvoeren
+action.refresh = Verversen
+action.export = Exporteren
+action.export.xslx = MS Excel (XLSX)
+action.export.csv = Kommagescheiden waarden (CSV)
+action.export.html = Hypertext Markup Language (HTML)
+action.confirmation_text = Weet je het zeker?
 
+dbui.search.placeholder = Zoek op trefwoorden...
+dbui.search.button = Zoeken
+dbui.create_new = Creëer Nieuw
+; {0} - table's singular name
+dbui.new_record = Nieuw {0}
+dbui.sidebar.showhide = Toon/Verberg Zijmenu
+dbui.sidebar.pin = Vastzetten/Losmaken Zijmenu
+dbui.sidebar.dashboards = Dashboards
+dbui.sidebar.recent_views = Recente Overzichten
+dbui.sidebar.views = Overzichten
+dbui.sidebar.other_views = Andere Overzichten
+dbui.helpbox = Help
+dbui.workspaces.title = Workspace Lijst
+dbui.workspaces.all_tables = Alle tabellen
+
+view.customize = Aanpassen
+view.customize.update = Updaten
+view.customize.reset = Wissen
+view.param.title = Selecteer Criteria
+view.param.search = Zoeken
+view.column.action = Actie
+view.no_records = Er kunnen geen records worden getoond
+; {0} - number of records displayed
+; {1} - total count of records
+view.num_records = Zichtbaar {0} records.
+view.num_records.1 = Zichtbaar 1 record.
+view.first_records = Zichtbaar eerste {0} records.
+view.first_records_of = Zichtbaar eerste {0} van {1} records.
+view.group.num_records = {0} records
+view.group.num_records.1 = 1 record
+view.show_all_link = Klik hier om alles te zien
+view.total = Totaal
+view.calendar.this_month = Deze Maand
+view.calendar.this_week = Deze Week
+view.calendar.prev = Vorige
+view.calendar.next = Volgende
+
+
+; {0} - table's singular name
+form.title.new = Nieuw {0}
+form.title.edit = Wijzig {0}
+; {0} - count of errors
+form.invaliddata.1 = Fout: Ongeldige gegevens. {0} fout(en) gevonden.
+form.invaliddata.2 = A.u.b. raadpleeg onderstaande foutmelding om de gegevens te coorigeren.
+
+form.error_value_missing = Invoer verplicht
+form.error_type_mismatch_text = Ongeldige tekstwaarde
+form.error_type_mismatch_number = Ongeldige numerieke waarde
+form.error_type_mismatch_date = Ongeldige datumwaarde
+form.error_type_mismatch_time = Ongeldige tijdsaanduiding
+form.error_type_mismatch_timestamp = Ongeldige opmaak timestamp
+form.error_type_mismatch_phone = Ongeldige opmaak telefoonnummer
+form.error_type_mismatch_email = Omgeldig opmaak e-mailadres
+form.error_type_mismatch_url = Ongeldige URL
+form.error_type_mismatch_user = Ongeldige gebruiker
+form.error_type_mismatch_barcode = Ongeldige barcode
+form.error_type_mismatch_location = Ongeldige locatie
+form.error_bad_input = Onjuiste invoer
+
+form.choice.none = --Geen--
+form.choice.addnew = --Voeg toe--
+form.choice.any = --Alle--
+form.choice.custom = --Selectie--
+form.choice.blank = --Leeg--
+form.choice.browse = --Maak keuze--
+form.choice.unknown = Onbekend
+form.choice.select = Selecteer
+form.choice.select_all = Selecteer Alle
+form.choice.select_none = Selecteer Geen
+form.choice.yes = Ja
+form.choice.no = Nee
+form.choice.add = Voeg toe
+form.choice.remove = Verwijder
+;
+; -- Signature component --
+;
+signature.title = Ondertekenen en opslaan
+signature.action.sign_off = Ondertekenen
+signature.action.withdraw = Verwijder ondertekening
+signature.action.withdraw.confirmation = Weet je het zeker dat je de ondertekening wilt verwijderen?
+signature.action.done = Klaar
+signature.action.reset = Herstel
+;
+; -- Location component --
+;
+location.current = Zoek huidige locatie
+location.select = Selecteer op de kaart
+location.search = Zoek de locatie of sleep een pin
+location.error.disabled = Locatiefunctie is uitgeschakeld
+location.error.failed = Locatie vinden niet gelukt
+location.error.timeout = Timeout bij vinden van locatie
+location.error.not_supported = Locatiefunctie is uitgeschakeld of wordt niet ondersteund
+
+; ---------------------
+;
+; Page specific strings
+;
+; ---------------------
+;
+; -- recordpicker.aspx --
+;
+; {0} - table's singular name
+recordpicker.title.no_search = Selecteer een {0}
+; {0} - table's plural name
+recordpicker.title.search = Selecteer van onderstaande lijst of maak een keuze uit {0}.
+
+;
+; -- recyclebin.aspx --
+;
+recyclebin.title = Prullenbak
+recyclebin.column.name = Naam
+recyclebin.column.deleted_by = Verwijderd door
+recyclebin.column.deleted_on = Verwijderd op
+recyclebin.no_records = Geen verwijderde records
+; {0} - comma separated list of tables' plural names
+recyclebin.no_records.description = Er zijn geen verwijderde {0}
+;
+; -- sendview.aspx --
+;
+; {0} - view name
+sendview.title = {0}: Versturen
+sendview.description = Gebruik onderstaand formulier om dit overzicht te versturen
+sendview.from = Van
+sendview.to = Aan
+sendview.subject = Onderwerp
+sendview.body = Tekst
+;
+; -- searchresults.aspx --
+;
+searchresults.title = Search Results
+; {0} - search terms
+searchresults.description.search_terms = Je zocht naar "{0}".
+searchresults.description.no_search = Er zijn geen waarden om te zoeken
+searchresults.no_records.title = geen records gevonden
+; {0} - comma separated list of tables' plural names
+searchresults.no_records.description = Er zijn geen overeenkomende {0}
+searchresults.action.continue = Doorgaan met zoeken?
+searchresults.attachments = Bestandsbijlagen
+searchresults.column.record = Record
+searchresults.column.table = Tabel
+searchresults.column.column = Veld
+searchresults.column.file_name = Bestandsnaam
+;
+; -- attachments.aspx --
+;
+; {0} - column name
+attachments.title = {0}: Revisiegeschiedenis
+attachments.action.make_current = Maak actueel
+attachments.column.revision = Revisie
+attachments.column.file_name = Bestandsnaam
+attachments.column.size = Grootte
+attachments.column.created_by = Gemaakt door
+attachments.column.created_on = Gemaakt op
+attachments.error.one_record = Minimaal een selectie verplicht
+attachments.error.no_access = Je hebt geen toegang tot deze bijlage
