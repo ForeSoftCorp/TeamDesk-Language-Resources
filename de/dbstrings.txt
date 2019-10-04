@@ -1,1 +1,176 @@
+; Common buttons
+action.new = Neu
+action.view = Ansehen
+action.edit = Bearbeiten
+action.del = Löschen
+action.delete = Löschen
+action.restore = Wiederherstellen 
+action.cancel = Stornieren
+action.back = Zurück
+action.print = Drucken
+action.send = Schicken
+action.save = Speichern
+action.add_similar = Ähnlich hinzufügen
+action.execute_query = Abfrage
+action.refresh = Wieder laden
+action.export = Exportieren
+action.export.xslx = Microsoft Excel (XLSX)
+action.export.csv = Comma-separated Werte (CSV)
+action.export.html = Hypertext Markup Language (HTML)
+action.confirmation_text = Sind Sie sicher?
 
+dbui.search.placeholder = Stichwörter suchen ...
+dbui.search.button = Suchen
+dbui.create_new = Erstellen
+; {0} - table's singular name
+dbui.new_record = New {0} Neu
+dbui.sidebar.showhide = Seitenleiste Zeigen/Verstecken
+dbui.sidebar.pin = Seitenleiste Fixieren/Befreien
+dbui.sidebar.dashboards = Dashboard
+dbui.sidebar.recent_views = Letzte Ansichten
+dbui.sidebar.views = Ansichten
+dbui.sidebar.other_views = Andere Ansichten
+dbui.helpbox = Hilfe
+dbui.workspaces.title = Arbeitsflächen Liste
+dbui.workspaces.all_tables = Alle Tabellen
+
+view.customize = Anpassen
+view.customize.update = Aktualisieren
+view.customize.reset = Zurücksetzen
+view.param.title = Parameter selektieren
+view.param.search = Suchen
+view.column.action = Aktion
+view.no_records = Es gibt keine Datensätze anzuzeigen
+; {0} - Anzahl der angezeigten Datensätze
+; {1} - Gesamt Anzahl der Datensätze
+view.num_records = Es werden {0} Datensätze angezeigt.
+view.num_records.1 = Es wird 1 Datensatz angezeigt.
+view.first_records = Es werden die ersten {0} Datensätze angezeigt.
+view.first_records_of = Es werden die ersten {0} von {1} Datensätze angezeigt.
+view.group.num_records = {0} Datensätze
+view.group.num_records.1 = 1 Datensatz
+view.show_all_link = Hier klicken um Alle anzuzeigen
+view.total = Summe
+view.calendar.this_month = Dieser Monat
+view.calendar.this_week = Diese Woche
+view.calendar.prev = Vorherige(r)
+view.calendar.next = Nächste(r)
+
+
+; {0} - table's singular name
+form.title.new = Neu {0}
+form.title.edit = Bearbeiten {0}
+; {0} - Fehlerzahl
+form.invaliddata.1 = Fehler: Ungütige Daten. {0} Fehler gefunden.
+form.invaliddata.2 = Bitte überpüfen sie die Fehlermeldungen unten um Ihre Daten zu korrigieren.
+
+form.error_value_missing = Sie müssen ein Wert eingeben
+form.error_type_mismatch_text = Ungültige URL
+form.error_type_mismatch_number = Ungültige Zahl
+form.error_type_mismatch_date = Ungültiges Datum
+form.error_type_mismatch_time = Ungültige Zeit
+form.error_type_mismatch_timestamp = Ungültiger Zeitstempel
+form.error_type_mismatch_phone = Ungültige Telefonnummer
+form.error_type_mismatch_email = Ungültige Emailadresse
+form.error_type_mismatch_url = Ungültige URL
+form.error_type_mismatch_user = Ungültiger Benutzer
+form.error_type_mismatch_barcode = Ungültige Strichcode
+form.error_type_mismatch_location = Ungültiger Standort
+form.error_bad_input = Ungültige Eingabe
+
+form.choice.none = --Keine--
+form.choice.addnew = --Neue Wahl hinzufügen--
+form.choice.any = --Beliebig--
+form.choice.custom = --Angepasst--
+form.choice.blank = --Leer--
+form.choice.browse = --Blättern--
+form.choice.unknown = Unbekannt
+form.choice.select = Selektieren
+form.choice.select_all = Alle selektieren
+form.choice.select_none = Keine selektieren
+form.choice.yes = Ja
+form.choice.no = Nein
+form.choice.add = Hinzufügen
+form.choice.remove = Entfernen
+;
+; -- Signature component --
+;
+signature.title = Bitte unten unterschreiben und speichern
+signature.action.sign_off = Unterschreiben
+signature.action.withdraw = Unterschrift zurücknehmen
+signature.action.withdraw.confirmation = Sind Sie sicher dass Sie Ihre Unterschrift zurücknehmen wollen?
+signature.action.done = Erledigt
+signature.action.reset = Zurücksetzen
+;
+; -- Location component --
+;
+location.current = Aktuellen Standort holen
+location.select = Auf der Karte selektieren
+location.search = Standort Suchen oder Nadle ziehen - not sure about this one
+location.error.disabled = Standortleistungen sind deaktiviert
+location.error.failed = Standort laden gescheitert
+location.error.timeout = Timeout währen Standortladung
+location.error.not_supported = Standortleistungen sind deaktiviert oder nicht unterstützt
+
+; ---------------------
+;
+; Page specific strings
+;
+; ---------------------
+;
+; -- recordpicker.aspx --
+;
+; {0} - table's singular name
+recordpicker.title.no_search = Selektieren Sie ein {0}
+; {0} - table's plural name
+recordpicker.title.search = Selektieren Sie von der Liste unten, oder suchen Sie um eine Teilliste von {0} zu sehen. 
+
+;
+; -- recyclebin.aspx --
+;
+recyclebin.title = Papierkorb
+recyclebin.column.name = Name
+recyclebin.column.deleted_by = Gelöscht von
+recyclebin.column.deleted_on = Gelöscht am
+recyclebin.no_records = Keine gelöschte Datensätze
+; {0} - comma separated list of tables' plural names
+recyclebin.no_records.description = Es gibt keine gelöschte {0}
+;
+; -- sendview.aspx --
+;
+; {0} - view name
+sendview.title = {0}: Schicken
+sendview.description = Benutzen Sie die Maske unten um diese Ansicht zu schicken.
+sendview.from = Von
+sendview.to = An
+sendview.subject = Betreff
+sendview.body = Text
+;
+; -- searchresults.aspx --
+;
+searchresults.title = Suchergebnisse
+; {0} - search terms
+searchresults.description.search_terms = Sie haben "{0}" gesucht.
+searchresults.description.no_search = Es gibt nichts zum suchen
+searchresults.no_records.title = Keine Datensätze gefunden
+; {0} - comma separated list of tables' plural names
+searchresults.no_records.description = Es gibt keine passende {0}
+searchresults.action.continue = Weiter suchen?
+searchresults.attachments = Dateianhänge
+searchresults.column.record = Datensatz
+searchresults.column.table = Tabelle
+searchresults.column.column = Spalte
+searchresults.column.file_name = Dateiname
+;
+; -- attachments.aspx --
+;
+; {0} - column name
+attachments.title = {0}: Änderungshistorie
+attachments.action.make_current = Übernehmen
+attachments.column.revision = Revision
+attachments.column.file_name = Dateiname
+attachments.column.size = Größe
+attachments.column.created_by = Erstellt von
+attachments.column.created_on = Erstellt am
+attachments.error.one_record = Es muss ein Datensatz selektiert werden
+attachments.error.no_access = Sie haben keinen Zugriff auf diesen Anhang
