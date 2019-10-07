@@ -65,7 +65,7 @@ form.invaliddata.1 = Error: Invalid Data. {0} error(s) found.
 form.invaliddata.2 = Please review error messages below to correct your data.
 
 form.error_value_missing = You must enter a value
-form.error_type_mismatch_text = Not a valid URL
+form.error_type_mismatch_text = Not a valid text
 form.error_type_mismatch_number = Not a valid number
 form.error_type_mismatch_date = Not a valid date
 form.error_type_mismatch_time = Not a valid time
