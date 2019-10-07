@@ -65,7 +65,7 @@ form.invaliddata.1 = Fehler: Ungütige Daten. {0} Fehler gefunden.
 form.invaliddata.2 = Bitte überpüfen sie die Fehlermeldungen unten um Ihre Daten zu korrigieren.
 
 form.error_value_missing = Sie müssen ein Wert eingeben
-form.error_type_mismatch_text = Ungültige URL
+form.error_type_mismatch_text = Ungültiger Text
 form.error_type_mismatch_number = Ungültige Zahl
 form.error_type_mismatch_date = Ungültiges Datum
 form.error_type_mismatch_time = Ungültige Zeit
