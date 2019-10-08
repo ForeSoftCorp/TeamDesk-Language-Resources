@@ -13,10 +13,13 @@ action.save = Save
 action.add_similar = Add Similar
 action.execute_query = Execute Query
 action.refresh = Refresh
+action.details = Details
 action.export = Export
 action.export.xslx = Microsoft Excel (XLSX)
 action.export.csv = Comma-separated values (CSV)
 action.export.html = Hypertext Markup Language (HTML)
+; {0} - current record, {1} - total records
+action.progress_text = Processing record {0} of {1}, please wait...
 action.confirmation_text = Are you sure?
 
 dbui.search.placeholder = Search for keywords...
@@ -24,8 +27,10 @@ dbui.search.button = Search
 dbui.create_new = Create New
 ; {0} - table's singular name
 dbui.new_record = New {0}
-dbui.sidebar.showhide = Show/Hide Sidebar
-dbui.sidebar.pin = Pin/Unpin Sidebar
+dbui.sidebar.show = Show Sidebar
+dbui.sidebar.hide = Hide Sidebar
+dbui.sidebar.pin = Pin Sidebar
+dbui.sidebar.unpin = Unpin Sidebar
 dbui.sidebar.dashboards = Dashboards
 dbui.sidebar.recent_views = Recent Views
 dbui.sidebar.views = Views
@@ -33,6 +38,35 @@ dbui.sidebar.other_views = Other Views
 dbui.helpbox = Help
 dbui.workspaces.title = Workspace List
 dbui.workspaces.all_tables = All tables
+dbui.tabs.more = More
+
+; Database-wide errors
+error.no_access.title = Error: Access is denied
+error.page_no_access.title = Error: Access to this page is denied
+error.no_access.description = You do not have the level of access necessary to perform the operation you requested. Please contact your administrator if access is necessary.
+error.page_unable_to_display.title = Error: Unable to display this page
+; {0} - domain name
+error.page_unable_to_display.description = Internal error occurred. Report was sent to {0} support team.
+; {0} - view name
+error.view_unable_to_display.title = Error: Unable to display {0} view
+error.section_unable_to_display.title = Error: Unable to display this section.
+
+error.view_bad_search = Invalid use of full-text predicate.
+error.view_divide_by_zero = Divide by zero error encountered.
+error.view_overflow = Arithmetic overflow error occurred.
+error.view_timeout = The timeout period elapsed prior to completion of the operation.
+error.view_internal_error = Internal error occurred.
+error.view_contact_administrator = Please contact your administrator.
+
+error.page_unable_to_save.title = Unable to save this page
+error.page_unable_to_save.description = We are unable to save the record as we have not received all the data. Perhaps this is temporary communication error. Please try again.
+
+error.record_no_access.title = Error: Access to the record denied
+error.record_no_access.description = The owner of this database has not granted you the permission to access the record. Please contact your administrator if access is necessary.
+error.record_not_available.title = Error: Record not available
+error.record_not_available.description = The record you were trying to access can not be found.
+error.record_deleted.title = Error: Record deleted
+error.record_deleted.description = The record you were trying to access has been deleted. The user who has deleted the record or the administrator can recover it from the Recycle Bin.
 
 view.customize = Customize
 view.customize.update = Update
@@ -56,10 +90,11 @@ view.calendar.this_week = This Week
 view.calendar.prev = Previous
 view.calendar.next = Next
 
-
 ; {0} - table's singular name
 form.title.new = New {0}
 form.title.edit = Edit {0}
+; {0} - table's plural name
+form.load_detail = Loading {0}...
 ; {0} - count of errors
 form.invaliddata.1 = Error: Invalid Data. {0} error(s) found.
 form.invaliddata.2 = Please review error messages below to correct your data.
@@ -92,6 +127,13 @@ form.choice.yes = Yes
 form.choice.no = No
 form.choice.add = Add
 form.choice.remove = Remove
+
+form.file.choose.1 = Choose File
+form.file.none = No file chosen
+form.file.undo = Undo
+form.file.remove = Remove
+form.file.confirm = Are you sure you want to remove selected file?
+
 ;
 ; -- Signature component --
 ;
@@ -102,11 +144,20 @@ signature.action.withdraw.confirmation = Are you sure you want to withdraw the s
 signature.action.done = Done
 signature.action.reset = Reset
 ;
+; -- Document component --
+;
+document.rendering = Rendering document...
+document.download = Starting download...
+document.action.done = Done
+document.error.no_records = No accessible records were found
+document.error.no_progress = Unable to report progress
+;
 ; -- Location component --
 ;
 location.current = Get current location
 location.select = Select on the map
 location.search = Search for location or drag a pin
+location.loading = Loading...
 location.error.disabled = Location services are disabled
 location.error.failed = Failed while getting location
 location.error.timeout = Timeout while getting location
@@ -153,6 +204,8 @@ searchresults.title = Search Results
 searchresults.description.search_terms = You were searching for "{0}".
 searchresults.description.no_search = There is nothing to search for
 searchresults.no_records.title = No records found
+; {0} - table's plural name
+searchresults.progress = Searching {0}...
 ; {0} - comma separated list of tables' plural names
 searchresults.no_records.description = There are no matching {0}
 searchresults.action.continue = Continue Searching?
