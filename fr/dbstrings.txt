@@ -1,4 +1,4 @@
-﻿; Common buttons
+; Common buttons
 action.new = Nouveau
 action.view = Voir
 action.edit = Modifier
@@ -13,10 +13,14 @@ action.save = Enregistrer
 action.add_similar = Ajouter un élément similaire
 action.execute_query = Exécuter la requête
 action.refresh = Actualiser
+action.details = Détails
+
 action.export = Exporter
 action.export.xslx = Microsoft Excel (XLSX)
 action.export.csv = valeurs séparées par des virgules (CSV)
 action.export.html = Langage de balisage hypertexte (HTML)
+; {0} - current record, {1} - total records
+action.progress_text = Enregistrement de traitement {0} de {1}, s'il vous plaît patienter ...
 action.confirmation_text = Êtes-vous sûr?
 
 dbui.search.placeholder = Rechercher les mots-clés ...
@@ -24,8 +28,10 @@ dbui.search.button = Rechercher
 dbui.create_new = Créer un nouveau
 ; {0} - table's singular name
 dbui.new_record = Nouveau {0}
-dbui.sidebar.showhide = Afficher / masquer la barre latérale
-dbui.sidebar.pin = Épingler / Dégager la barre latérale
+dbui.sidebar.show = Afficher la barre latérale
+dbui.sidebar.hide = Masquer la barre latérale
+dbui.sidebar.pin = Épingler la barre latérale
+dbui.sidebar.unpin = Dégager la barre latérale
 dbui.sidebar.dashboards = Tableaux de bord
 dbui.sidebar.recent_views = Vues récentes
 dbui.sidebar.views = Vues
@@ -33,6 +39,35 @@ dbui.sidebar.other_views = Autres vues
 dbui.helpbox = Aide
 dbui.workspaces.title = Liste des espaces de travail
 dbui.workspaces.all_tables = Toutes les tables
+dbui.tabs.more = Plus
+
+; Database-wide errors
+error.no_access.title = Erreur: l'accès est refusé
+error.page_no_access.title = Erreur: l'accès à cette page est refusé
+error.no_access.description = Vous ne disposez pas du niveau d'accès nécessaire pour effectuer l'opération que vous avez demandée. Veuillez contacter votre administrateur si un accès est nécessaire.
+error.page_unable_to_display.title = Erreur: impossible d'afficher cette page
+; {0} - domain name
+error.page_unable_to_display.description = Une erreur interne s'est produite. Le rapport a été envoyé à l'équipe de support {0}.
+; {0} - view name
+error.view_unable_to_display.title = Erreur: impossible d'afficher la vue {0}
+error.section_unable_to_display.title = Erreur: impossible d'afficher cette section.
+
+error.view_bad_search = Utilisation non valide du prédicat de texte intégral.
+error.view_divide_by_zero = Diviser par zéro l'erreur rencontrée.
+error.view_overflow = Une erreur de débordement arithmétique s'est produite.
+error.view_timeout = Le délai d'attente s'est écoulé avant la fin de l'opération.
+error.view_internal_error = Une erreur interne s'est produite.
+error.view_contact_administrator = Veuillez contacter votre administrateur.
+
+error.page_unable_to_save.title = Impossible d'enregistrer cette page
+error.page_unable_to_save.description = Nous ne sommes pas en mesure de sauvegarder l'enregistrement car nous n'avons pas reçu toutes les données. C'est peut-être une erreur de communication temporaire. Veuillez réessayer.
+
+error.record_no_access.title = Erreur: accès à l'enregistrement refusé
+error.record_no_access.description = Le propriétaire de cette base de données ne vous a pas donné l'autorisation d'accéder à l'enregistrement. Veuillez contacter votre administrateur si un accès est nécessaire.
+error.record_not_available.title = Erreur: enregistrement non disponible
+error.record_not_available.description = L'enregistrement auquel vous tentiez d'accéder est introuvable.
+error.record_deleted.title = Erreur: enregistrement supprimé
+error.record_deleted.description = L'enregistrement auquel vous tentiez d'accéder a été supprimé. L'utilisateur qui a supprimé l'enregistrement ou l'administrateur peut le récupérer à partir de la corbeille.
 
 view.customize = Personnaliser
 view.customize.update = Mise à jour
@@ -60,6 +95,8 @@ view.calendar.next = Prochain
 ; {0} - table's singular name
 form.title.new = Nouveau {0}
 form.title.edit = Editer {0}
+; {0} - table's plural name
+form.load_detail = Chargement {0}...
 ; {0} - count of errors
 form.invaliddata.1 = Erreur: données non valides. {0} erreur (s) trouvée (s).
 form.invaliddata.2 = Veuillez examiner les messages d'erreur ci-dessous pour corriger vos données.
@@ -92,6 +129,12 @@ form.choice.yes = Oui
 form.choice.no = No
 form.choice.add = Ajouter
 form.choice.remove = Supprimer
+form.file.choose.1 = Choisir le fichier
+form.file.none = Aucun fichier choisi
+form.file.undo = Annuler
+form.file.remove = Supprimer
+form.file.confirm = Êtes-vous sûr de vouloir supprimer le fichier sélectionné?
+
 ;
 ; -- Signature component --
 ;
@@ -101,12 +144,23 @@ signature.action.withdraw = Retirer la signature
 signature.action.withdraw.confirmation = Etes-vous sûr de vouloir retirer la signature?
 signature.action.done = Fini
 signature.action.reset = Réinitialiser
+
+;
+; -- Document component --
+;
+document.rendering = Rendu du document ...
+document.download = Démarrage du téléchargement...
+document.action.done = Fait
+document.error.no_records = Aucun enregistrement accessible n'a été trouvé
+document.error.no_progress = Impossible de signaler la progression
+
 ;
 ; -- Location component --
 ;
 location.current = Obtenir l'emplacement actuel
 location.select = Sélectionner sur la carte
 location.search = Recherchez un emplacement ou faites glisser une épingle
+location.loading = Chargement...
 location.error.disabled = Les services de localisation sont désactivés
 location.error.failed = Echec lors de l'obtention de l'emplacement
 location.error.timeout = Délai d'attente tout en obtenant l'emplacement
@@ -135,6 +189,7 @@ recyclebin.column.deleted_on = Supprimé le
 recyclebin.no_records = Aucun enregistrement supprimé
 ; {0} - comma separated list of tables' plural names
 recyclebin.no_records.description = Il n'y a pas de suppression {0}
+
 ;
 ; -- sendview.aspx --
 ;
@@ -145,6 +200,7 @@ sendview.from = De
 sendview.to = À
 sendview.subject = Sujet
 sendview.body = Corps
+
 ;
 ; -- searchresults.aspx --
 ;
@@ -153,7 +209,8 @@ searchresults.title = Résultats de la recherche
 searchresults.description.search_terms = Vous recherchiez "{0}".
 searchresults.description.no_search = Il n'y a rien à rechercher
 searchresults.no_records.title = Aucun enregistrement trouvé
-; {0} - liste des noms pluriels de tables séparés par des virgules
+; {0} - table's plural name
+searchresults.progress = Recherche {0} ...
 searchresults.no_records.description = Il n'y a pas de correspondance {0}
 searchresults.action.continue = Continuer à chercher??
 searchresults.attachments = Pièces jointes
@@ -161,6 +218,7 @@ searchresults.column.record = Record
 searchresults.column.table = Tableau
 searchresults.column.column = Colonne
 searchresults.column.file_name = Nom du fichier
+
 ;
 ; -- attachments.aspx --
 ;
