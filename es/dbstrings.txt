@@ -1,1 +1,229 @@
+﻿; Common buttons
+action.new = Crear
+action.view = Ver
+action.edit = Editar
+action.del = Supr
+action.delete = Eliminar
+action.restore = Recuperar
+action.cancel = Cancelar
+action.back = Regresar
+action.print = Imprimir
+action.send = Enviar
+action.save = Guardar
+action.add_similar = Añadir similar
+action.execute_query = Consultar
+action.refresh = Refrescar
+action.details = Detalles
+action.export = Exportar
+action.export.xslx = Microsoft Excel (XLSX)
+action.export.csv = Valores separados por comas (CSV)
+action.export.html = Lenguaje de marcas de hipertexto (HTML)
+; {0} - current record, {1} - total records
+action.progress_text = Se está procesando el registro {0} de {1}, espera un momento...
+action.confirmation_text = ¿Seguro?
 
+dbui.search.placeholder = Términos de búsqueda...
+dbui.search.button = Buscar
+dbui.create_new = Crear
+; {0} - table's singular name
+dbui.new_record = Crear {0}
+dbui.sidebar.show = Mostrar menú lateral
+dbui.sidebar.hide = Ocultar menú lateral
+dbui.sidebar.pin = Clavar menú lateral
+dbui.sidebar.unpin = Desclavar menú lateral
+dbui.sidebar.dashboards = Paneles
+dbui.sidebar.recent_views = Vistas recientes
+dbui.sidebar.views = Vistas
+dbui.sidebar.other_views = Otras vistas
+dbui.helpbox = Ayuda
+dbui.workspaces.title = Lista de espacios de trabajo
+dbui.workspaces.all_tables = Todas las tablas
+dbui.tabs.more = Más
+
+; Database-wide errors
+error.no_access.title = Error: Acceso denegado
+error.page_no_access.title = Error: Acceso a esta página denegado
+error.no_access.description = No tienes el nivel de acceso necesario para realizar la operación solicitada. Si necesitas mayor acceso, contacta al administrador.
+error.page_unable_to_display.title = Error: No se puede mostrar esta página
+; {0} - domain name
+error.page_unable_to_display.description = Error interno. Se ha enviado una notificación al equipo de apoyo de {0}.
+; {0} - view name
+error.view_unable_to_display.title = Error: No se puede mostrar la vista {0}
+error.section_unable_to_display.title = Error: No se puede mostrar esta sección.
+
+error.view_bad_search = Uso inválido de predicado de texto completo.
+error.view_divide_by_zero = Error de división por cero.
+error.view_overflow = Error de desbordamiento aritmético.
+error.view_timeout = Se agotó el tiempo de espera sin poder completar la operación.
+error.view_internal_error = Error interno.
+error.view_contact_administrator = Contacta al administrador.
+
+error.page_unable_to_save.title = No se puede guardar esta página
+error.page_unable_to_save.description = No se puede guardar este registro porque no se han recibido todos los datos. Quizá se deba a un error temporal de comunicación. Inténtalo otra vez.
+
+error.record_no_access.title = Error: Acceso a este registro denegado
+error.record_no_access.description = El propietario de la base de datos no te ha dado permiso para acceder a este registro. Si necesitas acceso, contacta al administrador.
+error.record_not_available.title = Error: Registro no disponible
+error.record_not_available.description = No fue posible encontrar el registro al que tratas de acceder.
+error.record_deleted.title = Error: Registro borrado
+error.record_deleted.description = El registro al que tratas de acceder ha sido borrado. El usuario que lo borró o el administrador pueden recuperarlo de la papelera de reciclaje.
+
+view.customize = Ajustes
+view.customize.update = Aplicar
+view.customize.reset = Restablecer
+view.param.title = Seleccionar criterios
+view.param.search = Buscar
+view.column.action = Acción
+view.no_records = No hay registros que mostrar
+; {0} - number of records displayed
+; {1} - total count of records
+view.num_records = Se muestran {0} registros.
+view.num_records.1 = Se muestra 1 registro.
+view.first_records = Se muestran los {0} primeros registros.
+view.first_records_of = Se muestran los {0} primeros registros de un total de {1}. 
+view.group.num_records = {0} registros
+view.group.num_records.1 = 1 registro
+view.show_all_link = Hac clic aquí para verlos todos
+view.total = Total
+view.calendar.this_month = Este mes
+view.calendar.this_week = Esta semana
+view.calendar.prev = Anterior
+view.calendar.next = Siguiente
+
+; {0} - table's singular name
+form.title.new = Añadir {0}
+form.title.edit = Editar {0}
+; {0} - table's plural name
+form.load_detail = Cargando {0}...
+; {0} - count of errors
+form.invaliddata.1 = Error: Datos inválidos. Hay {0} error(es).
+form.invaliddata.2 = Revisa más abajo los mensajes de error y corrige los datos.
+
+form.error_value_missing = Debes escribir un valor
+form.error_type_mismatch_text = Texto no válido
+form.error_type_mismatch_number = Número no válido
+form.error_type_mismatch_date = Fecha no válida
+form.error_type_mismatch_time = Hora no válida
+form.error_type_mismatch_timestamp = Marca de tiempo no válida
+form.error_type_mismatch_phone = Teléfono no válido
+form.error_type_mismatch_email = Dirección de e-mail no válida
+form.error_type_mismatch_url = URL no válida
+form.error_type_mismatch_user = Usuario no válido
+form.error_type_mismatch_barcode = Código de barras no válido
+form.error_type_mismatch_location = Ubicación no válida
+form.error_bad_input = Valor no válido
+
+form.choice.none = --Sin definir--
+form.choice.addnew = --Añadir otra opción--
+form.choice.any = --Cualquiera--
+form.choice.custom = --Definir intervalo--
+form.choice.blank = --En blanco--
+form.choice.browse = --Ver opciones--
+form.choice.unknown = No se sabe
+form.choice.select = Seleccionar
+form.choice.select_all = Marcar todos
+form.choice.select_none = Desmarcar todos
+form.choice.yes = Sí
+form.choice.no = No
+form.choice.add = Añadir
+form.choice.remove = Quitar
+
+form.file.choose.1 = Seleccionar archivo
+form.file.none = No se ha seleccionado ninguno
+form.file.undo = Deshacer
+form.file.remove = Quitar
+form.file.confirm = ¿Seguro que quieres quitar este archivo?
+
+;
+; -- Signature component --
+;
+signature.title = Firma en el espacio inferior y haz clic en Guardar
+signature.action.sign_off = Firmar
+signature.action.withdraw = Eliminar firma
+signature.action.withdraw.confirmation = ¿Seguro que quieres eliminar la firma?
+signature.action.done = Guardar
+signature.action.reset = Borrar
+;
+; -- Document component --
+;
+document.rendering = Se está generando una imagen del documento...
+document.download = Ha comenzado la descarga...
+document.action.done = Listo
+document.error.no_records = No hay registros accessibles
+document.error.no_progress = No es posible mostrar los progresos
+;
+; -- Location component --
+;
+location.current = Obtener ubicación
+location.select = Seleccionar en un mapa
+location.search = Buscar ubicación o arrastrar el marcador
+location.loading = Se está cargando la ubicación...
+location.error.disabled = Los servicios de ubicación están desactivados
+location.error.failed = No se pudo obtener la ubicación
+location.error.timeout = Se agotó el tiempo de espera sin poder obtener la ubicación
+location.error.not_supported = Los servicios de ubicación están desactivados o son incompatibles
+
+; ---------------------
+;
+; Page specific strings
+;
+; ---------------------
+;
+; -- recordpicker.aspx --
+;
+; {0} - table's singular name
+recordpicker.title.no_search = Selección de {0}
+; {0} - table's plural name
+recordpicker.title.search = Selecciona un elemento de la lista, o haz una búsqueda para ver solo un subconjunto de {0}.
+
+;
+; -- recyclebin.aspx --
+;
+recyclebin.title = Papelera de reciclaje
+recyclebin.column.name = Nombre
+recyclebin.column.deleted_by = Borrado por
+recyclebin.column.deleted_on = Fecha de borrado
+recyclebin.no_records = Tablas sin registros borrados
+; {0} - comma separated list of tables' plural names
+recyclebin.no_records.description = No hay registros borrados en las siguientes tablas: {0}
+;
+; -- sendview.aspx --
+;
+; {0} - view name
+sendview.title = {0}: Enviar
+sendview.description = Utiliza el siguiente formulario para enviar la vista.
+sendview.from = De
+sendview.to = Para
+sendview.subject = Asunto
+sendview.body = Cuerpo
+;
+; -- searchresults.aspx --
+;
+searchresults.title = Resultados de la búsqueda
+; {0} - search terms
+searchresults.description.search_terms = Buscaste "{0}".
+searchresults.description.no_search = No hay nada que buscar
+searchresults.no_records.title = No se encontraron registros
+; {0} - table's plural name
+searchresults.progress = Se está buscando en {0}...
+; {0} - comma separated list of tables' plural names
+searchresults.no_records.description = No hay ninguna coincidencia en las siguientes tablas: {0}
+searchresults.action.continue = ¿Seguir buscando?
+searchresults.attachments = Archivos adjuntos
+searchresults.column.record = Registro
+searchresults.column.table = Tabla
+searchresults.column.column = Columna
+searchresults.column.file_name = Nombre del archivo
+;
+; -- attachments.aspx --
+;
+; {0} - column name
+attachments.title = {0}: Historial de revisiones
+attachments.action.make_current = Dar vigencia
+attachments.column.revision = Revisión
+attachments.column.file_name = Nombre del archivo
+attachments.column.size = Tamaño
+attachments.column.created_by = Creado por
+attachments.column.created_on = Fecha de creación
+attachments.error.one_record = Para esta opción, selecciona un único registro
+attachments.error.no_access = No tienes acceso a este archivo adjunto
