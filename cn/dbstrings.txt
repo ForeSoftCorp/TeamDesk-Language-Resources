@@ -1,1 +1,226 @@
+; Common buttons
+action.new = 新建
+action.view = 查看
+action.edit = 编辑
+action.del = 删除
+action.delete = 删除
+action.restore = 恢复 
+action.cancel = 取消
+action.back = 后退
+action.print = 打印
+action.send = 发送
+action.save = 保存
+action.add_similar = 复制添加
+action.execute_query = 搜索
+action.refresh = 刷新
+action.details = 详细查看
+action.export = 导出
+action.export.xslx = Excel表格 (XLSX)
+action.export.csv = CSV表格 (CSV)
+action.export.html = 网页格式 (HTML)
+; {0} - current record, {1} - total records
+action.progress_text = 正在查找第{0}条记录（共{1}条），请稍后...
+action.confirmation_text = 确定吗？
 
+dbui.search.placeholder = 搜索关键词...
+dbui.search.button = 搜索
+dbui.create_new = 新建
+; {0} - table's singular name
+dbui.new_record = 添加新{0}
+dbui.sidebar.show = 显示侧边栏
+dbui.sidebar.hide = 隐藏侧边栏
+dbui.sidebar.pin = 固定侧边栏
+dbui.sidebar.unpin = 自动隐藏侧边栏
+dbui.sidebar.dashboards = 看板
+dbui.sidebar.recent_views = 最近查看记录
+dbui.sidebar.views = 视图
+dbui.sidebar.other_views = 其他视图
+dbui.helpbox = 帮助
+dbui.workspaces.title = 主菜单
+dbui.workspaces.all_tables = 所有工作表
+dbui.tabs.more = 更多
+
+; Database-wide errors
+error.no_access.title = 错误：访问被拒绝。
+error.page_no_access.title = 错误：所访问的页面被拒绝。
+error.no_access.description = 您的权限无法访问该内容，请联系管理员。
+error.page_unable_to_display.title = 错误：无法显示该页面
+; {0} - domain name
+error.page_unable_to_display.description = 网络连接错误，请联系管理员
+; {0} - view name
+error.view_unable_to_display.title = 错误：无法显示{0}
+error.section_unable_to_display.title = 错误：无法显示该内容
+error.view_bad_search = 错误：输入的文字无效
+error.view_divide_by_zero = 错误：被除数不能为0
+error.view_overflow = 错误：计算结果位数溢出
+error.view_timeout = 错误：等待超时
+error.view_internal_error = 错误：网络错误
+error.view_contact_administrator = 错误：请联系系统管理员
+error.page_unable_to_save.title = 错误：无法保存页面
+error.page_unable_to_save.description = 错误：数据未完整传输至服务器，因此无法保存记录。也许这是暂时的通讯错误，请再试一次。
+error.record_no_access.title = Error: 错误：访问被拒绝
+error.record_no_access.description = 错误：该数据库的所有者未授予您访问记录的权限。如果需要访问，请联系管理员。
+error.record_not_available.title = 错误：数据不存在
+error.record_not_available.description = 错误：您尝试访问的数据找不到
+error.record_deleted.title = 错误：您尝试访问的记录已被删除
+error.record_deleted.description = 错误：您尝试访问的记录已被删除，但是删除记录的用户或管理员可以从回收站中恢复它。
+
+view.customize = 自定义显示项
+view.customize.update = 刷新
+view.customize.reset = 复原
+view.param.title = 指定搜索内容
+view.param.search = 搜索
+view.column.action = 操作
+view.no_records = 无搜索结果
+; {0} - number of records displayed
+; {1} - total count of records
+view.num_records = 显示{0}条记录。
+view.num_records.1 = 显示1条记录。
+view.first_records = 显示前{0}条记录。
+view.first_records_of = 显示{0}条，总计{1}条。
+view.group.num_records = {0}条记录
+view.group.num_records.1 = 1条记录
+view.show_all_link = 点击这里显示全部
+view.total = 总计
+view.calendar.this_month = 本月
+view.calendar.this_week = 本周
+view.calendar.prev = 之前
+view.calendar.next = 之后
+
+; {0} - table's singular name
+form.title.new = 添加新{0}
+form.title.edit = 编辑{0}
+; {0} - table's plural name
+form.load_detail = 正在加载{0}...
+; {0} - count of errors
+form.invaliddata.1 = 错误：输入数据无效，发现了{0}个错误。
+form.invaliddata.2 = 错误：请仔细查看录入结果和错误提示，修改数据后重新保存。
+
+form.error_value_missing = 必填
+form.error_type_mismatch_text = 录入数据类型必须为“文字”
+form.error_type_mismatch_number = 录入数据类型必须为“数字”
+form.error_type_mismatch_date = 录入数据类型必须为“日期”
+form.error_type_mismatch_time = 录入数据类型必须为“时间”
+form.error_type_mismatch_timestamp = 录入数据类型必须为“日期和时间”
+form.error_type_mismatch_phone = 录入数据类型必须为“电话号码”
+form.error_type_mismatch_email = 录入数据类型必须为“电子邮件”
+form.error_type_mismatch_url = 录入数据类型必须为“超链接”
+form.error_type_mismatch_user = 录入数据类型必须为“用户”
+form.error_type_mismatch_barcode = 录入数据类型必须为“条形码”
+form.error_type_mismatch_location = 录入数据类型必须为“地点”
+form.error_bad_input = 数据录入无效
+
+form.choice.none = --无选择--
+form.choice.addnew = --添加新选项--
+form.choice.any = --以下任何一个--
+form.choice.custom = --自定义--
+form.choice.blank = --空白--
+form.choice.browse = --请选择--
+form.choice.unknown = 未知
+form.choice.select = 请选择
+form.choice.select_all = 选择全部
+form.choice.select_none = 清空选择
+form.choice.yes = 是
+form.choice.no = 否
+form.choice.add = 添加
+form.choice.remove = 移除
+form.file.choose.1 = 选择文件
+form.file.none = 未选择文件
+form.file.undo = 撤销
+form.file.remove = 删除
+form.file.confirm = 你确定要删除所选的文件？
+
+;
+; -- Signature component --
+;
+signature.title = 请签字确认并保存
+signature.action.sign_off = 签字
+signature.action.withdraw = 撤回签字
+signature.action.withdraw.confirmation = 确定要撤回签字？
+signature.action.done = 完成
+signature.action.reset = 重置
+
+;
+; -- Document component --
+;
+document.rendering = 文件生成中...
+document.download = 开始下载...
+document.action.done = 完成
+document.error.no_records = 错误：未发现任何记录
+document.error.no_progress = 错误：无法获取报告内容
+;
+; -- Location component --
+;
+location.current = 定位当前位置信息
+location.select = 在地图上查找位置信息
+location.search = 搜索位置信息或标记大头针
+location.loading = 定位中...
+location.error.disabled = 定位服务未开启
+location.error.failed = 定位失败
+location.error.timeout = 定位超时
+location.error.not_supported = 定位服务未开启或设备不支持定位服务
+
+; ---------------------
+;
+; Page specific strings
+;
+; ---------------------
+;
+; -- recordpicker.aspx --
+;
+; {0} - table's singular name
+recordpicker.title.no_search = 选择一个{0}记录
+; {0} - table's plural name
+recordpicker.title.search = 请从以下列表中选取{0}，或搜索{0}中符合条件的记录。
+
+;
+; -- recyclebin.aspx --
+;
+recyclebin.title = 回收站
+recyclebin.column.name = 名称
+recyclebin.column.deleted_by = 删除人
+recyclebin.column.deleted_on = 删除日期
+recyclebin.no_records = 无删除记录
+; {0} - comma separated list of tables' plural names
+recyclebin.no_records.description = 无删除的{0}记录
+;
+; -- sendview.aspx --
+;
+; {0} - view name
+sendview.title = {0}: 转发
+sendview.description = 填写邮件信息，转发表单内容。
+sendview.from = 发信人
+sendview.to = 收信人
+sendview.subject = 主题
+sendview.body = 正文
+;
+; -- searchresults.aspx --
+;
+searchresults.title = 搜索结果
+; {0} - search terms
+searchresults.description.search_terms = 你的搜索内容是"{0}"。
+searchresults.description.no_search = 无搜索内容
+searchresults.no_records.title = 没有找到任何内容
+; {0} - table's plural name
+searchresults.progress = Searching {0}...
+; {0} - comma separated list of tables' plural names
+searchresults.no_records.description = 没有找到匹配的内容{0}
+searchresults.action.continue = 是否继续搜索？
+searchresults.attachments = 附件
+searchresults.column.record = 记录
+searchresults.column.table = 表单
+searchresults.column.column = 表单列
+searchresults.column.file_name = 文件名
+;
+; -- attachments.aspx --
+;
+; {0} - column name
+attachments.title = {0}: 附件上传历史版本
+attachments.action.make_current = 设置为当前显示
+attachments.column.revision = 版本
+attachments.column.file_name = 文件名
+attachments.column.size = 文件大小
+attachments.column.created_by = 创建人
+attachments.column.created_on = 创建日期
+attachments.error.one_record = 需要选取一个文件
+attachments.error.no_access = 你无权访问该附件
