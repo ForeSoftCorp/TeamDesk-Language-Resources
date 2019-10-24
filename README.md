@@ -6,3 +6,4 @@
 * [Dutch](./nl/dbstrings.txt) courtesy of Jan Pieter Schoon
 * [German](./de/dbstrings.txt) courtesy of Philipp Matuschka
 * [Spanish](./es/dbstrings.txt) courtesy of Jorge Solá
+* [Chinese](./cn/dbstrings.txt) courtesy of Isaac Dai
