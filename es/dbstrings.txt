@@ -133,6 +133,7 @@ form.file.none = No se ha seleccionado ninguno
 form.file.undo = Deshacer
 form.file.remove = Quitar
 form.file.confirm = ¿Seguro que quieres quitar este archivo?
+form.file.revisions = Revisiones
 
 ;
 ; -- Signature component --
