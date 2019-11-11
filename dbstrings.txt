@@ -15,6 +15,7 @@ action.execute_query = Execute Query
 action.refresh = Refresh
 action.details = Details
 action.export = Export
+action.more = More...
 action.export.xslx = Microsoft Excel (XLSX)
 action.export.csv = Comma-separated values (CSV)
 action.export.html = Hypertext Markup Language (HTML)
@@ -85,6 +86,9 @@ view.group.num_records = {0} records
 view.group.num_records.1 = 1 record
 view.show_all_link = Click here to show all
 view.total = Total
+view.grand_total = Grand Total
+view.average = Average
+view.grand_average = Grand Average
 view.calendar.this_month = This Month
 view.calendar.this_week = This Week
 view.calendar.prev = Previous
@@ -133,7 +137,7 @@ form.file.none = No file chosen
 form.file.undo = Undo
 form.file.remove = Remove
 form.file.confirm = Are you sure you want to remove selected file?
-
+form.file.revisions = Revisions
 ;
 ; -- Signature component --
 ;
