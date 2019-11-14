@@ -1,4 +1,4 @@
-﻿; Common buttons
+; Common buttons
 action.new = Crear
 action.view = Ver
 action.edit = Editar
@@ -21,6 +21,7 @@ action.export.html = Lenguaje de marcas de hipertexto (HTML)
 ; {0} - current record, {1} - total records
 action.progress_text = Se está procesando el registro {0} de {1}, espera un momento...
 action.confirmation_text = ¿Seguro?
+action.more = Ver todo
 
 dbui.search.placeholder = Términos de búsqueda...
 dbui.search.button = Buscar
@@ -85,6 +86,9 @@ view.group.num_records = {0} registros
 view.group.num_records.1 = 1 registro
 view.show_all_link = Hac clic aquí para verlos todos
 view.total = Total
+view.grand_total = Total general
+view.average = Promedio
+view.grand_average = Promedio general
 view.calendar.this_month = Este mes
 view.calendar.this_week = Esta semana
 view.calendar.prev = Anterior
@@ -133,7 +137,7 @@ form.file.none = No se ha seleccionado ninguno
 form.file.undo = Deshacer
 form.file.remove = Quitar
 form.file.confirm = ¿Seguro que quieres quitar este archivo?
-form.file.revisions = Revisiones
+form.file.revisions = Versiones
 
 ;
 ; -- Signature component --
@@ -219,9 +223,9 @@ searchresults.column.file_name = Nombre del archivo
 ; -- attachments.aspx --
 ;
 ; {0} - column name
-attachments.title = {0}: Historial de revisiones
+attachments.title = {0}: Historial de versiones
 attachments.action.make_current = Dar vigencia
-attachments.column.revision = Revisión
+attachments.column.revision = Versión
 attachments.column.file_name = Nombre del archivo
 attachments.column.size = Tamaño
 attachments.column.created_by = Creado por
