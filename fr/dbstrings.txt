@@ -16,6 +16,7 @@ action.refresh = Actualiser
 action.details = Détails
 
 action.export = Exporter
+action.more = Plus ...
 action.export.xslx = Microsoft Excel (XLSX)
 action.export.csv = valeurs séparées par des virgules (CSV)
 action.export.html = Langage de balisage hypertexte (HTML)
@@ -86,6 +87,9 @@ view.group.num_records = {0} enregistrements
 view.group.num_records.1 = 1 enregistrement
 view.show_all_link = Cliquez ici pour tout afficher
 view.total = Total
+view.grand_total = Somme Globale
+view.average = la Moyenne
+view.grand_average = Moyenne Globale
 view.calendar.this_month = Ce mois-ci
 view.calendar.this_week = Cette semaine
 view.calendar.prev = Précédent
@@ -134,7 +138,7 @@ form.file.none = Aucun fichier choisi
 form.file.undo = Annuler
 form.file.remove = Supprimer
 form.file.confirm = Êtes-vous sûr de vouloir supprimer le fichier sélectionné?
-
+form.file.revisions = Révisions
 ;
 ; -- Signature component --
 ;
@@ -144,7 +148,6 @@ signature.action.withdraw = Retirer la signature
 signature.action.withdraw.confirmation = Etes-vous sûr de vouloir retirer la signature?
 signature.action.done = Fini
 signature.action.reset = Réinitialiser
-
 ;
 ; -- Document component --
 ;
@@ -153,7 +156,6 @@ document.download = Démarrage du téléchargement...
 document.action.done = Fait
 document.error.no_records = Aucun enregistrement accessible n'a été trouvé
 document.error.no_progress = Impossible de signaler la progression
-
 ;
 ; -- Location component --
 ;
@@ -189,7 +191,6 @@ recyclebin.column.deleted_on = Supprimé le
 recyclebin.no_records = Aucun enregistrement supprimé
 ; {0} - comma separated list of tables' plural names
 recyclebin.no_records.description = Il n'y a pas de suppression {0}
-
 ;
 ; -- sendview.aspx --
 ;
@@ -200,7 +201,6 @@ sendview.from = De
 sendview.to = À
 sendview.subject = Sujet
 sendview.body = Corps
-
 ;
 ; -- searchresults.aspx --
 ;
@@ -218,7 +218,6 @@ searchresults.column.record = Record
 searchresults.column.table = Tableau
 searchresults.column.column = Colonne
 searchresults.column.file_name = Nom du fichier
-
 ;
 ; -- attachments.aspx --
 ;
