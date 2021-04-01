@@ -62,7 +62,7 @@ form.title.new = Nieuw {0}
 form.title.edit = Wijzig {0}
 ; {0} - count of errors
 form.invaliddata.1 = Fout: Ongeldige gegevens. {0} fout(en) gevonden.
-form.invaliddata.2 = A.u.b. raadpleeg onderstaande foutmelding om de gegevens te coorigeren.
+form.invaliddata.2 = A.u.b. raadpleeg onderstaande foutmelding om de gegevens te corrigeren.
 
 form.error_value_missing = Invoer verplicht
 form.error_type_mismatch_text = Ongeldige tekstwaarde
